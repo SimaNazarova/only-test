@@ -28,7 +28,7 @@ function SwiperContainer() {
         }}
         modules={[Navigation]}
         className="swiper"
-        slidesPerView={width > 800 ? 3 : 2}>
+        slidesPerView={width > 800 ? 3 : 1.5}>
         {selectedSlides.dates.map((slide, index) => {
           return (
             <SwiperSlide key={index}>

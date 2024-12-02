@@ -8,7 +8,8 @@
   justify-content: center;
   margin-top: 96px;
   @media (max-width: 600px) {
-    gap: 40px;
+    gap: 26px;
+    justify-content: flex-start;
     margin-top: 56px;
   }
 

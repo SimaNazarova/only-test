@@ -9,15 +9,15 @@ const Pages: React.FC = () => {
   const { slidesId, slides, setSlidesId } = useStore();
 
   function counter(direction: string): void {
+    if (direction === "left") {
+      setSlidesId(slidesId - 1);
+    } else {
+      setSlidesId(slidesId + 1);
+    }
     gsap.to(".slider", {
       opacity: 0,
       duration: 0.5,
       onComplete: () => {
-        if (direction === "left") {
-          setSlidesId(slidesId - 1);
-        } else {
-          setSlidesId(slidesId + 1);
-        }
         gsap.fromTo(".slider", { y: 25 }, { opacity: 1, duration: 0.5, y: 0 });
       },
     });
