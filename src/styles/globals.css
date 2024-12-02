@@ -1,0 +1,8 @@
+@import "./_normalize.css";
+
+html {
+  background-color: #f4f5f9;
+  font-family: "PT Sans", sans-serif;
+  color: #42567a;
+}
+

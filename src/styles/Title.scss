@@ -1,0 +1,30 @@
+.title {
+  &__container {
+    max-width: 431px;
+    display: flex;
+    margin-right: auto;
+    gap: 78px;
+
+    @media (max-width: 600px) {
+      max-width: 123px;
+    }
+  }
+
+  &__left-border {
+    background: linear-gradient(#3877ee, #ef5da8);
+    width: 5px;
+    height: 120px;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}
