@@ -10,7 +10,7 @@ const RotatingCircle: React.FC = () => {
   const { width } = useWindowSize();
 
   const [translateX, setTranslateX] = useState<number>(265);
-  const [currentBtn, setCurrentBtn] = useState<number | null>(slidesId);
+  const [currentBtn, setCurrentBtn] = useState<number | null>(null);
 
   useEffect(() => {
     if (width <= 928) {
