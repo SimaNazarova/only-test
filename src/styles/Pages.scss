@@ -46,6 +46,7 @@
     border: 1px solid $primary;
     cursor: pointer;
     @media (max-width: 600px) {
+      padding: 0;
       width: 25px;
       height: 25px;
       background-size: 30%;
