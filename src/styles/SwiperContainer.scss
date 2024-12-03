@@ -1,0 +1,89 @@
+@use "../styles/_vars" as *;
+
+.slides {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 56px 10px 0px 10px;
+
+  &__arrow {
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #ffff;
+    background-image: url(../images/btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__arrow:last-of-type {
+    transform: rotate(360deg);
+  }
+
+  &__arrow:disabled {
+    visibility: hidden;
+  }
+}
+
+.slider {
+  width: 320px;
+  height: 200px;
+  margin-right: 10px;
+  @media (max-width: 600px) {
+    width: 166px;
+  }
+
+  &__year {
+    font-size: 25px;
+    color: $second;
+    text-align: left;
+    line-height: 120%;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 20px;
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    width: 83%;
+  }
+  @media (max-width: 430px) {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
