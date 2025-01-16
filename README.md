@@ -16,7 +16,7 @@
 
 #### В проекте использованы:
 1. React
-2. TypeScrict
+2. TypeScript
 3. Стейт менеджер Zustand
 4. SCSS
 5. GSAP
