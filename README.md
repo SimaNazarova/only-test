@@ -1,6 +1,6 @@
 # Лендинг «Исторические даты»‎
 
-[посмотреть лендинг](https://only-test-mk8u.vercel.app/)
+[посмотреть лендинг](https://only-test-mu.vercel.app/)
 
 
 #### установка проекта
@@ -10,15 +10,15 @@
 
 #### запуск проекта
 ```
- npm run dev
+ npm run start
 ```
 
 
 #### В проекте использованы:
-1. Next.js
-2. TypeScript
+1. React
+2. TypeScrict
 3. Стейт менеджер Zustand
 4. SCSS
 5. GSAP
 6. Swiper
-7. React-hook-form + yup
+7. Webpack
