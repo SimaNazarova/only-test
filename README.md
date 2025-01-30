@@ -10,15 +10,15 @@
 
 #### запуск проекта
 ```
- npm run start
+ npm run dev
 ```
 
 
 #### В проекте использованы:
-1. React
+1. Next.js
 2. TypeScript
 3. Стейт менеджер Zustand
 4. SCSS
 5. GSAP
 6. Swiper
-7. Webpack
+7. React-hook-form + yup
